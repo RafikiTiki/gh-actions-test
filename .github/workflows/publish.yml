@@ -26,7 +26,7 @@ jobs:
         with:
           node-version: '14'
       - run: yarn
-      - run: yarn prepare
+      - run: yarn run prepare
       - uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_AUTH_TOKEN }}
